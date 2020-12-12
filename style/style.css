@@ -74,7 +74,7 @@ a{
     font-size: 19px;
 }
 
-.chous {
+.chous, .download{
     width: 180px;
     height: 50px;
     border-rdius: 4px;
@@ -94,22 +94,11 @@ a{
     background-position: bottom left;
 }
 
-.download-style{
-    width: 180px;
-    height: 50px;
-    border-rdius: 4px;
-    text-align: center;
-    margin: 25px;
-    cursor: pointer;
-    display: none;
-    font: 14px/50px Tahoma;
-    transition: all 0.18s ease-in-out;
-    border: 1px solid #4FD666;
-    background: linear-gradient(to top right, #3EC97A, #69EA49 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
-    color: #4FD666;
+.download {
+
 }
 
-.download-style:hover{
+.download:hover{
     color: white;
     background-position: bottom left;
 }
