@@ -3,6 +3,7 @@ let input = document.querySelector('input[type="file"]');
 let data = new FormData();
 
 function readFile(input) {
+    document.getElementById("download-label").style.display="block";
     let file = input.files[0];
 
     let reader = new FileReader();

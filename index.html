@@ -19,13 +19,22 @@
 </header>
 <main class="container">
     <section class="info">
-        <div>
+        <div class="image-div">
             <img src="img/headphones.jpg" class="headphones" alt="Логотип нашей команды">
         </div>
         <div class="info-div">
-      <h2 class="info-title">Цепляющий заголовок</h2>
-        <p class="info-description">xtSome textSome textSome textSome textSomet</p>
+      <h2 class="info-title">Welcome to Salieri project!</h2>
+        <p class="info-description">Our project is created in order to help musicians in developing their
+        music. Our RNN neural network will continue your music and after finishing the process you will be able
+            to download it. This service can use any person <br><br>
+            If you want, to try it, press button under this text.<br><br><br><br>
+        </p>
+            <div>
+            <label for="your-files" class="chous">Choose a file</label>
             <input class="upload-file" type="file" id="your-files" onchange="readFile(this)" multiple>
+            <label for="download" class="download-style" id="download-label">Download your file</label>
+            <input class="download-file" type="file" id="download">
+            </div>
         <p class="info-format">.mp3, .wav, .flac.</p>
         </div>
     </section>
@@ -58,18 +67,19 @@
 
     <section class="contact">
      <h2 class="contact-name">Contact us</h2>
+        <div align="center" class="form-div">
       <form class="email" method="post">
           <p>
-              <label for="email-field" class="email-field-label">Email address</label>
+              <label for="email-field" class="email-field-label"><p class="email-p">Email address</p></label>
               <input id="email-field" type="text" placeholder="Enter email">
           </p>
-          <p>
-              <label for="text-field" class="text-field-label">Text</label>
-              <input id="text-field" type="text" placeholder="Write here">
+          <p class="text">
+              <textarea>Description of your problem or suggestion</textarea>
           </p>
 
           <button type="submit">Submit</button>
       </form>
+        </div>
     </section>
 </main>
 <script src="script/script.js"></script>
