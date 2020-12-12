@@ -1,30 +1,14 @@
-let input = document.querySelector('input[type="file"]');
-
-let data = new FormData();
-
 function readFile(input) {
     document.getElementById("download-label").style.display="block";
-    let file = input.files[0];
+    let data = new FormData();
 
-    let reader = new FileReader();
+    data.append('file', input.files[0]);
 
-    reader.readAsText(file);
-
-    reader.onload= function (e){
-        data.append('file', input.files[0]);
-        fetch('http://localhost:63342/PBL/index.html?_ijt=msk3b97oo87hpnjtb81g9ib82d', { //here add your url
-            method: 'POST',
-            body: data
-        }).then(success => console.log(success)
-        ).catch(error=> console.log(error));
-
-    };
-
-    reader.onerror = function() {
-        console.log(reader.error);
-    };
+    fetch('http://localhost:8080/sound', { //here add your url
+        method: 'POST',
+        body: data
+    }).then(r => console.log(r))
 
 }
-
 
 
