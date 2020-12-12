@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salieri</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navigation">
+        <hr class="test"/>
+        <ul class="site-navigation">
+            <li class="site-navigation-list"><a>Salieri</a></li>
+            <li class="site-navigation-list"><a>About us</a></li>
+            <li class="site-navigation-list"><a>Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <section class="info">
+        <div>
+            <img src="img/headphones.jpg" class="headphones" alt="Логотип нашей команды">
+        </div>
+        <div class="info-div">
+      <h2 class="info-title">Цепляющий заголовок</h2>
+        <p class="info-description">xtSome textSome textSome textSome textSomet</p>
+            <input class="upload-file" type="file" id="your-files" onchange="readFile(this)" multiple>
+        <p class="info-format">.mp3, .wav, .flac.</p>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2 class="team-name">Our team</h2>
+        <ul class="team-list">
+            <li class="team-member">
+                <img class="team-member-logo" src="img/artur.jpg">
+                <p class="team-member-name">Isac Artur</p>
+            </li>
+            <li class="team-member">
+                <img class="team-member-logo" src="img/jeka.JPG">
+                <p class="team-member-name">Chetar Eugeniu</p>
+            </li>
+            <li class="team-member">
+                <img class="team-member-logo" src="img/radu.jpg">
+                <p class="team-member-name">Arama Radu</p>
+            </li>
+            <li class="team-member">
+                <img class="team-member-logo" src="img/lina.jpg">
+                <p class="team-member-name">Cipciu Lina</p>
+            </li>
+            <li class="team-member">
+                <img class="team-member-logo" src="img/masihov.jpg">
+                <p class="team-member-name">Maslihov Vladislav</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact">
+     <h2 class="contact-name">Contact us</h2>
+      <form class="email" method="post">
+          <p>
+              <label for="email-field" class="email-field-label">Email address</label>
+              <input id="email-field" type="text" placeholder="Enter email">
+          </p>
+          <p>
+              <label for="text-field" class="text-field-label">Text</label>
+              <input id="text-field" type="text" placeholder="Write here">
+          </p>
+
+          <button type="submit">Submit</button>
+      </form>
+    </section>
+</main>
+<script src="script/script.js"></script>
+</body>
+</html>
