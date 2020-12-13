@@ -1,4 +1,4 @@
-let check;
+var check;
 
 function readFile(input) {
     let data = new FormData();
@@ -9,9 +9,10 @@ function readFile(input) {
     fetch('http://localhost:8080/sound', { //here add your url
         method: 'POST',
         body: data
-    }).then(r => {
-        console.log(r);
-        document.getElementById("download-label").style.display="block";
+    }).then(response => {
+            response.text().then(function(result){
+                check = result
+            })
         }
     )
 }
@@ -19,19 +20,18 @@ function readFile(input) {
 let button = document.getElementById("download-button");
 
 button.addEventListener("click", function (e) {
-    let filename = "output.txt";
-
+    let filename = "output.mid";
     download(check, filename)
-
 });
 
 function download(check, filename) {
-   let element = document.createElement('a');
-   element.setAttribute('href', 'data:text/plain;charset=utf-8,'+ encodeURIComponent(check));
+    let element = document.createElement('a');
+    console.log(check)
+    element.setAttribute('href', 'data:text/plain;base64,' + check);
     element.setAttribute('download', filename);
     element.style.display = 'none';
-   document.body.appendChild(element);
-   element.click();
-   document.body.removeChild(element);
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
 }
 
