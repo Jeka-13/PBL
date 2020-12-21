@@ -9,7 +9,7 @@
 <body>
 <header class="header">
     <nav class="navigation">
-        <hr class="test"/>
+
         <ul class="site-navigation">
             <li class="site-navigation-list"><a>Salieri</a></li>
             <li class="site-navigation-list"><a>About us</a></li>
@@ -30,13 +30,20 @@
                 If you want, to try it, press button under this text.<br><br><br><br>
             </p>
             <div>
+                <div id="upload-button">
                 <label for="your-files" class="choose">Choose a file</label>
                 <input class="upload-file" type="file" id="your-files" onchange="readFile(this)" multiple>
+                </div>
+                <div id="display-wait">
+                    <p class="wait">Please, wait. Our service is working under your input</p>
+                </div>
             </div>
             <div>
-                <a class="choose" id="download-button">Download</a>
+                <a class="download" id="download-button">Download</a>
             </div>
-            <p class="info-format">.mp3, .wav, .flac.</p>
+            <div id="info-format">
+            <p class="info-format">.midi</p>
+            </div>
         </div>
     </section>
 
@@ -49,7 +56,7 @@
             </li>
             <li class="team-member">
                 <img class="team-member-logo" src="img/jeka.JPG">
-                <p class="team-member-name">Chetar Eugeniu</p>
+                <p class="team-member-name">Chetrar Eugeniu</p>
             </li>
             <li class="team-member">
                 <img class="team-member-logo" src="img/radu.jpg">
@@ -76,10 +83,12 @@
                 <input id="email-field" type="text" placeholder="Enter email">
                 </p>
                 <p class="text">
-                    <textarea>Description of your problem or suggestion</textarea>
+                    <textarea></textarea>
                 </p>
-
-                <button type="submit">Submit</button>
+                <div>
+                    <label for="contact-id" class="contact-button">Submit</label>
+                <button type="submit" id="contact-id"></button>
+                </div>
             </form>
         </div>
     </section>

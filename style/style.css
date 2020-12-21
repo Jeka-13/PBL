@@ -15,6 +15,7 @@ a, button{
 }
 
 .navigation{
+    width: 100%;
     line-height: 70px;
     background-color: black;
 }
@@ -38,28 +39,27 @@ a, button{
     display: flex;
     flex-direction: row;
     block-size: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .info-div{
+    margin-left: 30%;
+    width: 65%;
     margin-top: 90px;
-    padding-left: 35%;
 }
 
 .image-div{
     margin-top: 80px;
-    padding-left: 10%;
 }
 
 
 .headphones{
+    margin-left: 10%;
     width: 30em;
     height: 30em;
 }
 
 .info-title {
-    margin-right: 5em;
+    margin-right: 30%;
     font-size: 32px;
     text-align: right;
 }
@@ -69,12 +69,15 @@ a, button{
     font-size: 25px;
 }
 
-
+#info-format{
+    display: block;
+}
 .info-format{
+    margin-left: 3rem;
     font-size: 19px;
 }
 
-.choose, .download{
+.choose, .download, .contact-button{
     width: 180px;
     height: 50px;
     border-radius: 4px;
@@ -82,11 +85,21 @@ a, button{
     margin: 25px;
     cursor: pointer;
     display: block;
-    font: 14px/50px Tahoma;
+    font: 19px/50px Tahoma;
     transition: all 0.18s ease-in-out;
     border: 1px solid #4FD666;
     background: linear-gradient(to top right, #3EC97A, #69EA49 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
     color: #4FD666;
+}
+
+
+.download{
+    display: none;
+}
+
+.contact-button:hover{
+    color: white;
+    background-position: bottom left;
 }
 
 .choose:hover {
@@ -108,9 +121,18 @@ a, button{
     z-index: -1;
 }
 
+.wait{
+   font-size: 30px;
+}
+
+#display-wait{
+    display: none;
+}
+
 
 
 .team{
+    width: 100%;
     display: block;
     block-size: 900px;
 }
@@ -135,15 +157,20 @@ a, button{
 }
 
 .team-list{
+    margin-right: 3%;
+    margin-left: 3%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
 }
 
 
 
 .contact{
+    width: 100%;
     display: block;
     block-size: 830px;
 }
@@ -153,7 +180,6 @@ a, button{
     padding-top: 152px;
     text-align: center;
 }
-
 
 .form-div{
 margin-top: 30px;
@@ -168,10 +194,20 @@ margin-top: 30px;
     margin-bottom: 10px;
 }
 
+#email-field{
+    width: 20%;
+    height: 35px;
+}
+
 textarea{
-    height: 150px;
+    width: 40%;
+    height: 175px;
     padding: 12px 20px;
     box-sizing: border-box;
     resize: none;
+}
+
+.contact-button{
+    margin-top: 15px;
 }
 
