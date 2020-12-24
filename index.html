@@ -11,9 +11,9 @@
     <nav class="navigation">
 
         <ul class="site-navigation">
-            <li class="site-navigation-list"><a>Salieri</a></li>
-            <li class="site-navigation-list"><a>About us</a></li>
-            <li class="site-navigation-list"><a>Contacts</a></li>
+            <li class="site-navigation-list"><div class="btn from-center">Salieri</div></li>
+            <li class="site-navigation-list"><div class="btn from-center" id="scrollToTeam">About us</div></li>
+            <li class="site-navigation-list"><div class="btn from-center" id="scrollToContacts">Contacts</div></li>
         </ul>
     </nav>
 </header>
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <h2 class="team-name">Our team</h2>
         <ul class="team-list">
             <li class="team-member">
@@ -73,7 +73,7 @@
         </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contacts">
         <h2 class="contact-name">Contact us</h2>
         <div align="center" class="form-div">
             <form class="email" method="post">
@@ -86,8 +86,7 @@
                     <textarea></textarea>
                 </p>
                 <div>
-                    <label for="contact-id" class="contact-button">Submit</label>
-                <button type="submit" id="contact-id"></button>
+                    <label class="contact-button">Submit</label>
                 </div>
             </form>
         </div>

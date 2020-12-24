@@ -3,6 +3,16 @@ let button = document.getElementById("download-button");
 let button2 = document.getElementById("upload-button");
 let waitText = document.getElementById('display-wait');
 let formatText = document.getElementById("info-format");
+let sectionInfo = document.getElementById("scrollToTeam");
+let sectionContacts = document.getElementById("scrollToContacts")
+
+sectionInfo.addEventListener("click", function (e) {
+  document.getElementById("team").scrollIntoView();
+});
+
+sectionContacts.addEventListener("click", function (e) {
+    document.getElementById("contacts").scrollIntoView();
+});
 
 function readFile(input) {
     let data = new FormData();
