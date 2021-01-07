@@ -4,7 +4,7 @@ let button2 = document.getElementById("upload-button");
 let waitText = document.getElementById('display-wait');
 let formatText = document.getElementById("info-format");
 let sectionInfo = document.getElementById("scrollToTeam");
-let sectionContacts = document.getElementById("scrollToContacts")
+let sectionContacts = document.getElementById("scrollToContacts");
 
 sectionInfo.addEventListener("click", function (e) {
   document.getElementById("team").scrollIntoView();
@@ -53,5 +53,10 @@ function download(check, filename) {
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
+
+    //test
+    button2.style.display='block';
+    formatText.style.display ='block';
+    button.style.display='none';
 }
 
