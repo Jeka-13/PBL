@@ -24,7 +24,7 @@ function readFile(input) {
     waitText.style.display='block';
     formatText.style.display = 'none';
 
-    fetch('http://192.168.49.2/sound/', { //here add your url
+    fetch('http://35.240.10.89/sound/', { //here add your url
         method: 'POST',
         body: data
     }).then(response => {
